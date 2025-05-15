@@ -61,6 +61,9 @@ DTW is a DApp Solana-powered dApp where users publish AI-verified testimonials i
 git clone https://github.com/Jerryblessed/dtw.git
 cd dtw/app_v2
 
+# Setup environment variables
+cp .env.example .env  # or manually rename .env.example to .env
+
 # Install dependencies
 npm install
 
