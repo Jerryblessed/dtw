@@ -8,10 +8,11 @@ import * as util from '../utils/util';
 import dotenv from 'dotenv';
 dotenv.config();  // Loads environment variables from .env file
 
-const AZURE_OPENAI_BASE = process.env.AZURE_OPENAI_BASE;
-const AZURE_OPENAI_MODEL = process.env.AZURE_OPENAI_MODEL;
-const AZURE_OPENAI_KEY = process.env.AZURE_OPENAI_KEY;
-const AZURE_OPENAI_VERSION = process.env.AZURE_OPENAI_VERSION;
+// testing mode only. Dont use in production
+const AZURE_OPENAI_BASE = "https://thisisoajo.openai.azure.com";
+const AZURE_OPENAI_MODEL = "gpt-4o";
+const AZURE_OPENAI_KEY = "9I4UEJweVUdih04Uv8AXcAxs5H8jSQRfwaugcSQYHcI882wSpFvqJQQJ99BAACL93NaXJ3w3AAABACOGkv4f";
+const AZURE_OPENAI_VERSION = "2023-06-01-preview";
 const SYSTEM_PROMPT = "Guide in writing carrier driven prompt not more than 4 words or so.";
 
 interface Message {
