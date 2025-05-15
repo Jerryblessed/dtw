@@ -12,7 +12,7 @@ const AZURE_OPENAI_BASE = process.env.AZURE_OPENAI_BASE;
 const AZURE_OPENAI_MODEL = process.env.AZURE_OPENAI_MODEL;
 const AZURE_OPENAI_KEY = process.env.AZURE_OPENAI_KEY;
 const AZURE_OPENAI_VERSION = process.env.AZURE_OPENAI_VERSION;
-const SYSTEM_PROMPT = process.env.SYSTEM_PROMPT;
+const SYSTEM_PROMPT = "Guide in writing carrier driven prompt not more than 4 words or so.";
 
 interface Message {
     role: 'system' | 'user' | 'assistant';

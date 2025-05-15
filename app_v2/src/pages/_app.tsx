@@ -48,11 +48,12 @@ const EarthLogo: FC = () => (
 
 // Rotating testimonials
 const testimonials = [
-  { name: 'Bob', text: '“Just finished my final year project on quantum processing, very happy! 🎉”' },
-  { name: 'Joe', text: '“Just got admitted into the University of Oxford to study medicine, and currently seeking students 🎓”' },
-  { name: 'Mary', text: '“My team and I have gotten the Upwork project 🤝”' },
-  { name: 'Collins', text: '“Just earned a certificate of Python for Everyone at Coursera 🎓”' },
+  { name: 'Bob', text: '"Final project complete 🎉"' },
+  { name: 'Joe', text: '"Admitted to Oxford 🎓"' },
+  { name: 'Mary', text: '"Landed Upwork project 🤝"' },
+  { name: 'Collins', text: '"Earned Python certificate 🎓"' },
 ];
+
 
 const FEATURES = ['🔗 Solana-blockchain', '✅AI-Verified', '🌐 RPC-based', '🪙SOL support'];
 
