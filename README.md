@@ -1,38 +1,72 @@
-# Solana Twitter
+# Decentralized Testimonial Tweet (DTW)
 
-## 🎬 Recorded Sessions
-| Link | Instructor | Event |
-| ---- | ---------- | ----- |
-| [<img src="https://raw.githubusercontent.com/Solana-Workshops/.github/main/.docs/youtube-icon.png" alt="youtube" width="20" align="center"/> Recording](https://youtu.be/yubojBH8e_Q) | Joe Caulfield | N/A |
+![Landing Page 1](https://github.com/Jerryblessed/dtw/blob/main/app_v2/public/screenshort/landing1.png?raw=true)
+![Landing Page 2](https://github.com/Jerryblessed/dtw/blob/main/app_v2/public/screenshort/landing2.png?raw=true)
+![Home Screen](https://github.com/Jerryblessed/dtw/blob/main/app_v2/public/screenshort/homescreen.png?raw=true)
 
-## ☄️ Open in Solana Playground IDE
+> Turning truth into opportunity—on-chain.
 
-| Program | Link |
-| -------------------- | --------------------------------------- |
-| v1 | [ ![program](https://ik.imagekit.io/mkpjlhtny/solpg_button_zWM8WlPKs.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1662621556513)](  https://beta.solpg.io/github/https://github.com/Solana-Workshops/solana-twitter/tree/main/programs/solana-twitter-v1) |
-| v2 | [ ![program](https://ik.imagekit.io/mkpjlhtny/solpg_button_zWM8WlPKs.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1662621556513)](  https://beta.solpg.io/github/https://github.com/Solana-Workshops/solana-twitter/tree/main/programs/solana-twitter-v2) |
+DTW is a DApp Solana-powered dApp where users publish AI-verified testimonials in areas like Coding 💻, Fashion 👗, and Farming 🌾. An onboard AI agent screens for harmful content and suggests improvements. Approved posts are stored immutably on-chain, and users earn Solana testnet tokens for every like and retweet—promoting truth, skill growth, and real opportunity.
 
-## 📗 Learn
+## Architecture Flow
 
-This workshop demonstrates how to create a social media app (like Twitter) using Solana's PDAs and on-chain data.   
-   
-You can find all of the details on how this program works in the [Diagrams](#diagrams) section below.
+```text
++---------------------+
+|   🧑  User Wallet    |
+| (Connect to DTW App)|
++---------+-----------+
+          |
+          v
++----------------------------+
+| 🎁 Manual Token Airdrop    |  ← User clicks "Monthly Airdrop"
+| (Once/month enforcement)   |
++------------+---------------+
+             |
+             v
++------------------------------+
+| ✍️ Post / ❤️ Like / 🔁 Retweet |
+| (Spend small tokens to act)  |
++-------------+----------------+
+              |
+              v
++-------------------------------------+
+| 🤖 AI Agent Moderation              |
+| - Azure OpenAI API                  |
+| - Screens content for violations    |
+| - Suggests improvements             |
++-----------------+-------------------+
+                  |
+                  v
+     +-------------------------------+
+     | ✅ Verified Content Approved  |
+     |   + Stored on Solana Devnet   |
+     |   + Engagement counters updated|
+     +---------------+---------------+
+                     |
+                     v
+     +-------------------------------+
+     | 🏅 Badge Granted (Not Minted) |
+     | - 1 badge per approved post   |
+     +-------------------------------+
 
-### A Note on v1 & v2
+```
 
-This demo is broken up into two programs: v1 and v2. 
-* **v1**:
-    * Demonstrates how to use PDAs to create profiles and tweets, and also likes and retweets
-    * Leverages seed mapping and counter fields to load a user's data   
-* **v2**:
-    * Build *on top of* v1, with some new features
-    * Introduces the ability to mint users tokens based on their earned likes & retweets
-    * Demonstrates how to create mints that are PDAs off of the program
-    * Demonstrates how to designate the program (via a PDA) as the Mint Authority
-    * Demonstrates how to airdrop users tokens without requiring action on their part
+## Quick Start
 
-## Diagrams
+```bash
+# Clone the repository
+git clone https://github.com/Jerryblessed/dtw.git
+cd dtw/app_v2
 
-![](./data_model.jpg)
-![](./fetching_data.jpg)
-![](./autoincrement.jpg)
+# Install dependencies
+npm install
+
+# Run in development mode
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+*For full details, see the source code and docs in the repository.*
