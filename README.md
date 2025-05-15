@@ -1,6 +1,7 @@
 # Decentralized Testimonial Tweet (DTW)
 
 [🌐 Goto Web3 app ](https://gibbon-clever-bream.ngrok-free.app/dtw)
+
 [📈 Goto presentation slide ](https://docs.google.com/presentation/d/1HjA1pPfhq8lztDtjqDrUgsAL6qAkqzO8LnwLm3e8vDw/edit?usp=sharing)
 
 DTW is a DApp Solana-powered dApp where users publish AI-verified testimonials in areas like Coding 💻, Fashion 👗, and Farming 🌾. An onboard AI agent screens for harmful content and suggests improvements. Approved posts are stored immutably on-chain, and users earn Solana testnet tokens for every like and retweet—promoting truth, skill growth, and real opportunity.
